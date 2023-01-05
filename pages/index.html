@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha Tormenta v0</title>
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <section class="container">
+        <ul class="char-info">
+            <ln class="char-info_element"><input type="text" class="input-nome-do-personagem">
+                <p>Nome do Personagem</p>
+            </ln>
+            <ln class="char-info_element"><input type="text">
+                <p>Jogador</p>
+            </ln>
+            <ln class="char-info_element"><input type="text">
+                <p>Raça</p>
+            </ln>
+            <ln class="char-info_element"><input type="text">
+                <p>Origem</p>
+            </ln>
+            <ln class="char-info_element"><input type="text">
+                <p>Classe & Nível</p>
+            </ln>
+            <ln class="char-info_element nivel-do-personagem"><input type="text" class="input-nivel-do-personagem">
+                <p>Nível do Personagem</p>
+            </ln>
+        </ul>
+    </section>
+    <section class="container">
+        <div>
+            <p class="titulo">Atributos</p>
+            <ul class="atributos">
+                <ln class="atributo"><strong id="atributo_for">10</strong>
+                    <p>For</p>
+                </ln>
+                <ln class="atributo"><strong id="atributo_des">10</strong>
+                    <p>Des</p>
+                </ln>
+                <ln class="atributo"><strong id="atributo_con">10</strong>
+                    <p>Con</p>
+                </ln>
+                <ln class="atributo"><strong id="atributo_int">10</strong>
+                    <p>Int</p>
+                </ln>
+                <ln class="atributo"><strong id="atributo_sab">10</strong>
+                    <p>Sab</p>
+                </ln>
+                <ln class="atributo"><strong id="atributo_car">10</strong>
+                    <p>Car</p>
+                </ln>
+            </ul>
+            <div class="pontos">
+                <p class="pontos_titulo">Pontos de vida</p>
+                <ul class="pontos_num">
+                    <ln class="medidor-pontos"><strong>10</strong>
+                        <p>Máximos</p>
+                    </ln>
+                    <ln class="medidor-pontos"><strong>10</strong>
+                        <p>Atuais</p>
+                    </ln>
+                    <ln class="medidor-pontos"><strong>10</strong>
+                        <p>Temporarios</p>
+                    </ln>
+                </ul>
+            </div>
+            <div class="pontos">
+                <p class="pontos_titulo">Pontos de Mana</p>
+                <ul class="pontos_num">
+                    <ln class="medidor-pontos"><strong>10</strong>
+                        <p>Máximos</p>
+                    </ln>
+                    <ln class="medidor-pontos"><strong>10</strong>
+                        <p>Atuais</p>
+                    </ln>
+                    <ln class="medidor-pontos"><strong>10</strong>
+                        <p>Temporarios</p>
+                    </ln>
+                </ul>
+            </div>
+            <div>
+                <p class="pontos_titulo">Defesa</p>
+                <ul class="defesa">
+                    <ln class="def_stats">Total<strong>10</strong></ln>
+                    <ln class="def_stats"><strong>10</strong></ln>
+                    <ln class="def_stats">Mod de Def</ln>
+                    <ln class="def_stats">Bonus de armadura</ln>
+                    <ln class="def_stats">Bonus de escudo</ln>
+                    <ln class="def_stats">outro</ln>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="pericias">
+            <p class="titulo">Pericias</p>
+            <ul class="pericias_lista">
+                <ln><input type="checkbox" name="Pericia treinada" id="treino-pericia_Acrobacia">Acrobacia<p
+                        class="pericia_num">+10</p>
+                    <p class="pericia_num">+10</p>
+                    <p class="pericia_num">+10</p>
+                </ln>
+                <ln><input type="checkbox" name="Pericia treinada" id="treino-pericia_Adestramento">Adestramento<p
+                        class="pericia_num">+10</p>
+                    <p class="pericia_num">+10</p>
+                    <p class="pericia_num">+10</p>
+                </ln>
+                <ln><input type="checkbox" name="Pericia treinada" id="treino-pericia_Atletismo">Atletismo<p
+                        class="pericia_num">+10</p>
+                    <p class="pericia_num">+10</p>
+                    <p class="pericia_num">+10</p>
+                </ln>
+                <ln><input type="checkbox" name="Pericia treinada" id="treino-pericia_Atuacao">Atuação<p
+                        class="pericia_num">+10</p>
+                    <p class="pericia_num">+10</p>
+                    <p class="pericia_num">+10</p>
+                </ln>
+                <ln><input type="checkbox" name="Pericia treinada" id="treino-pericia_Cavalgar">Cavalgar<p
+                        class="pericia_num">+10</p>
+                    <p class="pericia_num">+10</p>
+                    <p class="pericia_num">+10</p>
+                </ln>
+                <ln><input type="checkbox" name="Pericia treinada" id="treino-pericia_Conhecimento">Conhecimento<p
+                        class="pericia_num">+10</p>
+                    <p class="pericia_num">+10</p>
+                    <p class="pericia_num">+10</p>
+                </ln>
+                <ln><input type="checkbox" name="Pericia treinada" id="treino-pericia_Cura">Cura<p class="pericia_num">
+                        +10</p>
+                    <p class="pericia_num">+10</p>
+                    <p class="pericia_num">+10</p>
+                </ln>
+                <ln><input type="checkbox" name="Pericia treinada" id="treino-pericia_Diplomacia">Diplomacia<p
+                        class="pericia_num">+10</p>
+                    <p class="pericia_num">+10</p>
+                    <p class="pericia_num">+10</p>
+                </ln>
+                <ln><input type="checkbox" name="Pericia treinada" id="treino-pericia_Enganacao">Enganação<p
+                        class="pericia_num">+10</p>
+                    <p class="pericia_num">+10</p>
+                    <p class="pericia_num">+10</p>
+                </ln>
+                <ln><input type="checkbox" name="Pericia treinada" id="treino-pericia_Fortitude">Fortitude<p
+                        class="pericia_num">+10</p>
+                    <p class="pericia_num">+10</p>
+                    <p class="pericia_num">+10</p>
+                </ln>
+                <ln><input type="checkbox" name="Pericia treinada" id="treino-pericia_Furtividade">Furtividade<p
+                        class="pericia_num">+10</p>
+                    <p class="pericia_num">+10</p>
+                    <p class="pericia_num">+10</p>
+                </ln>
+                <ln><input type="checkbox" name="Pericia treinada" id="treino-pericia_Guerra">Guerra<p
+                        class="pericia_num">+10</p>
+                    <p class="pericia_num">+10</p>
+                    <p class="pericia_num">+10</p>
+                </ln>
+                <ln><input type="checkbox" name="Pericia treinada" id="treino-pericia_Iniciativa">Iniciativa<p
+                        class="pericia_num">+10</p>
+                    <p class="pericia_num">+10</p>
+                    <p class="pericia_num">+10</p>
+                </ln>
+                <ln><input type="checkbox" name="Pericia treinada" id="treino-pericia_Intimidacao">Intimidação<p
+                        class="pericia_num">+10</p>
+                    <p class="pericia_num">+10</p>
+                    <p class="pericia_num">+10</p>
+                </ln>
+                <ln><input type="checkbox" name="Pericia treinada" id="treino-pericia_Intuicao">Intuição<p
+                        class="pericia_num">+10</p>
+                    <p class="pericia_num">+10</p>
+                    <p class="pericia_num">+10</p>
+                </ln>
+                <ln><input type="checkbox" name="Pericia treinada" id="treino-pericia_Investigacao">Investigação<p
+                        class="pericia_num">+10</p>
+                    <p class="pericia_num">+10</p>
+                    <p class="pericia_num">+10</p>
+                </ln>
+                <ln><input type="checkbox" name="Pericia treinada" id="treino-pericia_Jogatina">Jogatina<p
+                        class="pericia_num">+10</p>
+                    <p class="pericia_num">+10</p>
+                    <p class="pericia_num">+10</p>
+                </ln>
+                <ln><input type="checkbox" name="Pericia treinada" id="treino-pericia_Ladinagem">Ladinagem<p
+                        class="pericia_num">+10</p>
+                    <p class="pericia_num">+10</p>
+                    <p class="pericia_num">+10</p>
+                </ln>
+                <ln><input type="checkbox" name="Pericia treinada" id="treino-pericia_Luta">Luta<p class="pericia_num">
+                        +10</p>
+                    <p class="pericia_num">+10</p>
+                    <p class="pericia_num">+10</p>
+                </ln>
+                <ln><input type="checkbox" name="Pericia treinada" id="treino-pericia_Misticismo">Misticismo<p
+                        class="pericia_num">+10</p>
+                    <p class="pericia_num">+10</p>
+                    <p class="pericia_num">+10</p>
+                </ln>
+                <ln><input type="checkbox" name="Pericia treinada" id="treino-pericia_Nobreza">Nobreza<p
+                        class="pericia_num">+10</p>
+                    <p class="pericia_num">+10</p>
+                    <p class="pericia_num">+10</p>
+                </ln>
+                <ln><input type="checkbox" name="Pericia treinada" id="treino-pericia_Oficio1">Ofício<p
+                        class="pericia_num">+10</p>
+                    <p class="pericia_num">+10</p>
+                    <p class="pericia_num">+10</p>
+                </ln>
+                <ln><input type="checkbox" name="Pericia treinada" id="treino-pericia_Oficio2">Ofício<p
+                        class="pericia_num">+10</p>
+                    <p class="pericia_num">+10</p>
+                    <p class="pericia_num">+10</p>
+                </ln>
+                <ln><input type="checkbox" name="Pericia treinada" id="treino-pericia_Percepcao">Percepção<p
+                        class="pericia_num">+10</p>
+                    <p class="pericia_num">+10</p>
+                    <p class="pericia_num">+10</p>
+                </ln>
+                <ln><input type="checkbox" name="Pericia treinada" id="treino-pericia_Pilotagem">Pilotagem<p
+                        class="pericia_num">+10</p>
+                    <p class="pericia_num">+10</p>
+                    <p class="pericia_num">+10</p>
+                </ln>
+                <ln><input type="checkbox" name="Pericia treinada" id="treino-pericia_Pontaria">Pontaria<p
+                        class="pericia_num">+10</p>
+                    <p class="pericia_num">+10</p>
+                    <p class="pericia_num">+10</p>
+                </ln>
+                <ln><input type="checkbox" name="Pericia treinada" id="treino-pericia_Reflexos">Reflexos<p
+                        class="pericia_num">+10</p>
+                    <p class="pericia_num">+10</p>
+                    <p class="pericia_num">+10</p>
+                </ln>
+                <ln><input type="checkbox" name="Pericia treinada" id="treino-pericia_Religiao">Religião<p
+                        class="pericia_num">+10</p>
+                    <p class="pericia_num">+10</p>
+                    <p class="pericia_num">+10</p>
+                </ln>
+                <ln><input type="checkbox" name="Pericia treinada" id="treino-pericia_Sobrevivencia">Sobrevivência<p
+                        class="pericia_num">+10</p>
+                    <p class="pericia_num">+10</p>
+                    <p class="pericia_num">+10</p>
+                </ln>
+                <ln><input type="checkbox" name="Pericia treinada" id="treino-pericia_Vontade">Vontade<p
+                        class="pericia_num">+10</p>
+                    <p class="pericia_num">+10</p>
+                    <p class="pericia_num">+10</p>
+                </ln>
+            </ul>
+        </div>
+    </section>
+    <section class="container">
+
+    </section>
+</body>
+
+</html>

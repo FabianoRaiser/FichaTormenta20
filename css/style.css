@@ -1,0 +1,122 @@
+strong {
+    font-size: 24px;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 24px;
+}
+
+.container {
+    border-bottom: 2px solid black;
+    border-radius: 10px;
+}
+
+.char-info {
+    margin: 8px 0;
+    padding-left: 4px;
+    display: inline-block;
+    grid-template-columns: 1fr;
+    max-width: min-content;
+}
+
+.char-info_element {
+    display: inline-block;
+    padding: 4px;
+    font-size: 16px;
+}
+
+.char-info_element input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.input-nome-do-personagem {
+    width: 100%;
+}
+
+.input-nivel-do-personagem {
+    width: 30px;
+}
+
+.nivel-do-personagem {
+    display: flex;
+    gap: 8px;
+}
+
+.atributos {
+    margin: 8px;
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.atributo {
+    margin-left: 4px;
+    display: inline-block;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 24px;
+    text-align: center;
+}
+
+.pontos {
+    display: flexbox ;
+    border: 1px solid black;
+    margin: 0 8px 4px;
+    border-radius: 10px;
+}
+
+.pontos_num {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.pontos_titulo {
+  text-align: center;
+}
+
+.medidor-pontos {
+    display: inline;
+    text-align: center;
+    grid-area: 2;
+    margin: 4px;
+    padding: 4px;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
+
+.defesa {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.def_stats {
+    font-size: 12px;
+    display: inline;
+    text-align: center;
+    grid-area: 2;
+    margin: 4px;
+}
+
+.pericias {
+    border: 1px solid black;
+    margin: 4px;
+    border-radius: 5px;
+}
+
+.pericias_lista {
+    display: grid;
+    row-gap: 4px;
+    max-width: 320px;
+}
+
+.pericias_lista ln {
+    border-bottom: 1px solid gray;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 0.25fr 1fr 0.25fr 0.25fr 0.25fr;
+}
