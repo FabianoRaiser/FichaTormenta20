@@ -12,6 +12,10 @@ strong {
     border-radius: 10px;
 }
 
+.char-info-cont {
+    max-width: 320px;
+}
+
 .char-info {
     margin: 8px 0;
     padding-left: 4px;
@@ -45,6 +49,9 @@ strong {
     gap: 8px;
 }
 
+.stats{
+    max-width: 320px;
+}
 .atributos {
     margin: 8px;
     display: grid;
@@ -92,6 +99,7 @@ strong {
     display: flex;
     gap: 8px;
     justify-content: center;
+    max-width: 320px;
 }
 
 .def_stats {
@@ -106,6 +114,7 @@ strong {
     border: 1px solid black;
     margin: 4px;
     border-radius: 5px;
+    max-width: 320px;
 }
 
 .pericias_lista {
@@ -118,5 +127,5 @@ strong {
     border-bottom: 1px solid gray;
     display: grid;
     grid-auto-flow: column;
-    grid-template-columns: 0.25fr 1fr 0.25fr 0.25fr 0.25fr;
+    grid-template-columns: 0.25fr 1fr 0.25fr 0.25fr;
 }
