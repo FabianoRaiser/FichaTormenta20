@@ -8,6 +8,9 @@
     <title>Ficha Tormenta v0</title>
 
     <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
@@ -88,18 +91,15 @@
             <div>
                 <p class="pontos_titulo">Defesa</p>
                 <ul class="defesa">
-                    <ln class="def_stats">Total<strong>10</strong></ln>
-                    <ln class="def_stats"><strong>10</strong></ln>
-                    <ln class="def_stats">Mod de Def</ln>
-                    <ln class="def_stats">Bonus de armadura</ln>
-                    <ln class="def_stats">Bonus de escudo</ln>
-                    <ln class="def_stats">outro</ln>
+                    <ln class="def_stats"><p>Total</p><strong>10</strong></ln>
+                    <ln class="def_stats def-plus"><strong>10</strong></ln>
+                    <ln class="def_stats"><div class="def-plus"><p>Outro</p><input type="number" name="outros_def" id="outros_def"></div></ln>
                 </ul>
             </div>
         </div>
     </section>
     <!--Pericias-->
-    <section class="container">
+    <section class="container pericias-cont">
         <div class="pericias">
             <p class="titulo">Pericias</p>
             <ul class="pericias_lista">
@@ -127,7 +127,8 @@
                         class="pericia_num">+10</span>
                     <span class="pericia_num">+10</span>
                 </ln>
-                <ln><input type="checkbox" name="Pericia treinada" id="treino-pericia_Cura">Cura<span class="pericia_num">
+                <ln><input type="checkbox" name="Pericia treinada" id="treino-pericia_Cura">Cura<span
+                        class="pericia_num">
                         +10</span>
                     <span class="pericia_num">+10</span>
                 </ln>
@@ -175,7 +176,8 @@
                         class="pericia_num">+10</span>
                     <span class="pericia_num">+10</span>
                 </ln>
-                <ln><input type="checkbox" name="Pericia treinada" id="treino-pericia_Luta">Luta<span class="pericia_num">
+                <ln><input type="checkbox" name="Pericia treinada" id="treino-pericia_Luta">Luta<span
+                        class="pericia_num">
                         +10</span>
                     <span class="pericia_num">+10</span>
                 </ln>
@@ -226,8 +228,63 @@
             </ul>
         </div>
     </section>
-    <section class="container">
-        <div></div>
+    <section class="container ataques-cont">
+        <div class="ataques">
+            <p class="titulo">Ataques</p>
+            <div class="cabecalho-atq"><p>Nome do ataque</p><p>Mod.</p><p>Dano</p></div>
+                <ul id="ataques_lista">
+                    <ln class="atq">
+                        <p class="nome-ataque">Ataque</p><span>+5</span><span>1d6+2</span><button id="detalhes-atq"><i class="fa-sharp fa-solid fa-sheet-plastic"></i></button>
+                    </ln>
+                    <ln class="atq">
+                        <p class="nome-ataque">Ataque</p><span>+5</span><span>1d6+2</span><button id="detalhes-atq"><i class="fa-sharp fa-solid fa-sheet-plastic"></i></button>
+                    </ln>
+                </ul>
+            <div id="ataques_novo-ataque"><button id="novo-ataque-btn"><i
+                        class="fa-sharp fa-solid fa-plus"></i></button></div>
+        </div>
+    </section>
+    <section class="container magias-cont">
+        <div class="magias">
+            <p class="titulo">Magias</p>
+            <div class="cabecalho-mag"><span>Nvl</span><p>Nome da magia</p><p>CD</p><p>Dano</p></div>
+                <ul id="magias_lista">
+                    <ln class="mag">
+                        <span>1º</span><p class="nome-magia">Magia</p><span>+5</span><span>1d6+2</span><button id="detalhes-mag"><i class="fa-sharp fa-solid fa-sheet-plastic"></i></button>
+                    </ln>
+                    <ln class="mag">
+                        <span>1º</span><p class="nome-magia">Magia</p><span>+5</span><span>1d6+2</span><button id="detalhes-mag"><i class="fa-sharp fa-solid fa-sheet-plastic"></i></button>
+                    </ln>
+                </ul>
+            <div id="magias_nova-magia"><button id="nova-magia-btn"><i
+                        class="fa-sharp fa-solid fa-plus"></i></button></div>
+        </div>
+    </section>
+    <section class="container habilidades-cont">
+        <div class="habilidades">
+            <p class="titulo">Habilidades</p>
+            <div class="cabecalho-hab"><p>Nvl</p><p>Nome da habilidade</p></div>
+                <ul id="habilidades_lista">
+                    <ln class="hab">
+                        <span>+5</span><p class="nome-habilidade">Magia</p><button id="detalhes-hab"><i class="fa-sharp fa-solid fa-sheet-plastic"></i></button>
+                    </ln>
+                    <ln class="hab">
+                        <span>+5</span><p class="nome-habilidade">Magia</p><button id="detalhes-hab"><i class="fa-sharp fa-solid fa-sheet-plastic"></i></button>
+                    </ln>
+                </ul>
+        </div>
+    </section>
+    <section class="container proeficiencias-cont">
+        <p class="titulo">Proeficiencias</p><p class="proeficiencias">Lorem Ipsum</p>
+    </section>
+    <section class="container equipamento-cont"><p class="titulo">Equipamentos</p>
+        <div class="cabecalho-equip"><p>Qnt</p><p>Nome</p><p>Peso</p></div>
+        <ul class="equipamento_lista">
+            <ln class="equip"><span>1</span><p>Equipamento</p><span>0.5</span></ln>
+        </ul>
+        <div id="equip_novo-equip"><button id="novo-equip-btn"><i
+            class="fa-sharp fa-solid fa-plus"></i></button></div>
+</div>
     </section>
 </body>
 

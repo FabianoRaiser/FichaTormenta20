@@ -99,6 +99,7 @@ strong {
     display: flex;
     gap: 8px;
     justify-content: center;
+    align-items: flex-end;
     max-width: 320px;
 }
 
@@ -108,6 +109,19 @@ strong {
     text-align: center;
     grid-area: 2;
     margin: 4px;
+}
+
+.def-plus::before {
+    content: "+";
+}
+
+#outros_def {
+    width: 24px;
+    height: 24px;
+}
+
+.pericias-cont {
+    max-width: 320px;
 }
 
 .pericias {
@@ -128,4 +142,150 @@ strong {
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: 0.25fr 1fr 0.25fr 0.25fr;
+}
+
+.ataques {
+    margin-bottom: 8px;
+}
+
+.ataques-cont {
+    max-width: 640px;
+}
+
+.cabecalho-atq {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 0.25fr 0.25fr 0.25fr;
+    margin: 4px 8px;
+
+}
+
+#ataques_lista {
+    display: grid;
+    grid-auto-flow: row;
+    margin-bottom: 4px;
+}
+
+.atq {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 0.25fr 0.25fr 0.25fr;
+    font-size: 18px;
+    margin: 4px 8px;
+    border-bottom: 1px solid gray;
+}
+
+#detalhes-atq {
+    margin-left: 8px;
+}
+
+#ataques_novo-ataque {
+    margin-left: 8px;
+}
+
+.magias {
+    margin-bottom: 8px;
+}
+
+.magias-cont {
+    max-width: 640px;
+}
+
+.cabecalho-mag {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 0.25fr 1fr 0.25fr 0.25fr 0.25fr;
+    margin: 4px 8px;
+
+}
+
+#magias_lista {
+    display: grid;
+    grid-auto-flow: row;
+    margin-bottom: 4px;
+}
+
+.mag {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 0.25fr 1fr 0.25fr 0.25fr 0.25fr;
+    font-size: 18px;
+    margin: 4px 8px;
+    border-bottom: 1px solid gray;
+}
+
+#detalhes-mag {
+    margin-left: 8px;
+}
+
+#magias_nova-magia {
+    margin-left: 8px;
+}
+.habilidades {
+    margin-bottom: 8px;
+}
+
+.habilidades-cont {
+    max-width: 640px;
+}
+
+.cabecalho-hab {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 0.25fr 1fr 0.25fr;
+    margin: 4px 8px;
+
+}
+
+#habilidades_lista {
+    display: grid;
+    grid-auto-flow: row;
+    margin-bottom: 4px;
+}
+
+.hab {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 0.25fr 1fr 0.25fr;
+    font-size: 18px;
+    margin: 4px 8px;
+    border-bottom: 1px solid gray;
+}
+
+#detalhes-hab {
+    margin-left: 8px;
+}
+
+.proeficiencias-cont {
+    max-width: 640px;
+    padding: 8px;
+}
+
+.proeficiencias {
+    margin-top: 4px;
+    padding: 4px;
+    border: 1px solid black;
+}
+
+.equipamento-cont {
+    max-width: 320px;
+}
+
+.cabecalho-equip {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 0.25fr 1fr 0.25fr 0.25fr;
+    margin: 4px 8px;
+}
+
+.equip {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 0.25fr 1fr 0.25fr 0.25fr;
+    margin: 4px 8px;
+    border-bottom: 1px solid gray;
+}
+
+#equip_novo-equip {
+    margin-left: 8px;
 }
