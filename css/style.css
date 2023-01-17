@@ -111,8 +111,8 @@ strong {
     margin: 4px;
 }
 
-.def-plus::before {
-    content: "+";
+.def-plus::before, .def-plus::after {
+    content: " + ";
 }
 
 #outros_def {

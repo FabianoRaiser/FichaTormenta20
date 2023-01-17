@@ -17,22 +17,22 @@
 <body>
     <section class="container char-info-cont">
         <ul class="char-info">
-            <ln class="char-info_element"><input type="text" class="input-nome-do-personagem">
+            <ln class="char-info_element"><input type="text" class="input-nome-do-personagem" id="input-personagem" value="Exemplo Exemplar">
                 <p>Nome do Personagem</p>
             </ln>
-            <ln class="char-info_element"><input type="text">
+            <ln class="char-info_element"><input type="text" id="input-personagem">
                 <p>Jogador</p>
             </ln>
-            <ln class="char-info_element"><input type="text">
+            <ln class="char-info_element"><input type="text" id="input-personagem">
                 <p>Raça</p>
             </ln>
-            <ln class="char-info_element"><input type="text">
+            <ln class="char-info_element"><input type="text" id="input-personagem">
                 <p>Origem</p>
             </ln>
-            <ln class="char-info_element"><input type="text">
+            <ln class="char-info_element"><input type="text" id="input-personagem">
                 <p>Classe & Nível</p>
             </ln>
-            <ln class="char-info_element nivel-do-personagem"><input type="text" class="input-nivel-do-personagem">
+            <ln class="char-info_element nivel-do-personagem"><input type="text" class="input-nivel-do-personagem" id="input-personagem">
                 <p>Nível do Personagem</p>
             </ln>
         </ul>
@@ -41,22 +41,22 @@
         <div>
             <p class="titulo">Atributos</p>
             <ul class="atributos">
-                <ln class="atributo"><strong id="atributo_for">10</strong>
+                <ln class="atributo"><strong id="atributo">10</strong>
                     <p>For</p>
                 </ln>
-                <ln class="atributo"><strong id="atributo_des">10</strong>
+                <ln class="atributo"><strong id="atributo">10</strong>
                     <p>Des</p>
                 </ln>
-                <ln class="atributo"><strong id="atributo_con">10</strong>
+                <ln class="atributo"><strong id="atributo">10</strong>
                     <p>Con</p>
                 </ln>
-                <ln class="atributo"><strong id="atributo_int">10</strong>
+                <ln class="atributo"><strong id="atributo">10</strong>
                     <p>Int</p>
                 </ln>
-                <ln class="atributo"><strong id="atributo_sab">10</strong>
+                <ln class="atributo"><strong id="atributo">10</strong>
                     <p>Sab</p>
                 </ln>
-                <ln class="atributo"><strong id="atributo_car">10</strong>
+                <ln class="atributo"><strong id="atributo">10</strong>
                     <p>Car</p>
                 </ln>
             </ul>
@@ -93,7 +93,7 @@
                 <ul class="defesa">
                     <ln class="def_stats"><p>Total</p><strong>10</strong></ln>
                     <ln class="def_stats def-plus"><strong>10</strong></ln>
-                    <ln class="def_stats"><div class="def-plus"><p>Outro</p><input type="number" name="outros_def" id="outros_def"></div></ln>
+                    <ln class="def_stats"><p>Outro</p><input type="number" name="outros_def" id="outros_def"></ln>
                 </ul>
             </div>
         </div>
@@ -286,6 +286,8 @@
             class="fa-sharp fa-solid fa-plus"></i></button></div>
 </div>
     </section>
+
+    <script src="../js/main.js"></script>
 </body>
 
 </html>
