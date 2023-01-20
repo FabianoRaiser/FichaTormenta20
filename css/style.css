@@ -1,12 +1,28 @@
 @import url(./header.css);
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&display=swap');
+
+:root {
+    --fonte-principal: "Merriweather";
+    --cor-de-fundo: #FFFFFF;
+    --cor-bordas: #000000;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 300;
+    max-width: 100vw;
+}
 
 strong {
     font-size: 24px;
 }
 
 .titulo {
+    margin-top: 4px;
     text-align: center;
     font-size: 24px;
+    font-weight: 700;
 }
 
 .container {
@@ -15,7 +31,7 @@ strong {
 }
 
 .char-info-cont {
-    max-width: 320px;
+    max-width: 100vw;
 }
 
 .char-info {
@@ -43,7 +59,7 @@ strong {
 }
 
 .stats{
-    max-width: 320px;
+    max-width: 100vw;
 }
 .atributos {
     margin: 8px;
@@ -81,7 +97,6 @@ strong {
 .medidor-pontos {
     display: inline;
     text-align: center;
-    grid-area: 2;
     margin: 4px;
     padding: 4px;
     border-left: 1px solid gray;
@@ -93,7 +108,7 @@ strong {
     gap: 8px;
     justify-content: center;
     align-items: flex-end;
-    max-width: 320px;
+    max-width: 100vw;
 }
 
 .def_stats {
@@ -114,20 +129,20 @@ strong {
 }
 
 .pericias-cont {
-    max-width: 320px;
+    max-width: 100vw;
 }
 
 .pericias {
     border: 1px solid black;
     margin: 4px;
     border-radius: 5px;
-    max-width: 320px;
+    max-width: 100vw;
 }
 
 .pericias_lista {
     display: grid;
     row-gap: 4px;
-    max-width: 320px;
+    max-width: 100vw;
 }
 
 .pericias_lista ln {
@@ -142,7 +157,7 @@ strong {
 }
 
 .ataques-cont {
-    max-width: 640px;
+    max-width: 100vw;
 }
 
 .cabecalho-atq {
@@ -150,6 +165,7 @@ strong {
     grid-auto-flow: column;
     grid-template-columns: 1fr 0.25fr 0.25fr 0.25fr;
     margin: 4px 8px;
+    font-weight: 700;
 
 }
 
@@ -181,7 +197,7 @@ strong {
 }
 
 .magias-cont {
-    max-width: 640px;
+    max-width: 100vw;
 }
 
 .cabecalho-mag {
@@ -189,6 +205,7 @@ strong {
     grid-auto-flow: column;
     grid-template-columns: 0.25fr 1fr 0.25fr 0.25fr 0.25fr;
     margin: 4px 8px;
+    font-weight: 700;
 
 }
 
@@ -219,7 +236,7 @@ strong {
 }
 
 .habilidades-cont {
-    max-width: 640px;
+    max-width: 100vw;
 }
 
 .cabecalho-hab {
@@ -227,6 +244,7 @@ strong {
     grid-auto-flow: column;
     grid-template-columns: 0.25fr 1fr 0.25fr;
     margin: 4px 8px;
+    font-weight: 700;
 
 }
 
@@ -250,7 +268,7 @@ strong {
 }
 
 .proeficiencias-cont {
-    max-width: 640px;
+    max-width: 100vw;
     padding: 8px;
 }
 
@@ -261,7 +279,7 @@ strong {
 }
 
 .equipamento-cont {
-    max-width: 320px;
+    max-width: 100vw;
 }
 
 .cabecalho-equip {

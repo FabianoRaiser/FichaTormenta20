@@ -16,12 +16,19 @@
 
 <body>
     <header class="cabecalho">
-        <span class="menu"></span>
+        <input type="checkbox" class="menu__botao" name="menu" id="menu">
+        <label for="menu"><span class="menu"></span></label>
+        <ul class="lista-menu">
+            <li class="lista-menu__titulo">Páginas</li>
+            <li class="lista-menu__item"><a href="./index.html" class="lista-menu__link">Ficha</a></li>
+            <li class="lista-menu__item"><a href="./criacaoDeFicha.html" class="lista-menu__link">Criação de Ficha</a></li>
+        </ul>
         <p class="titulo__cabecalho">Ficha</p>
     </header>
     <section class="container char-info-cont">
         <ul class="char-info">
-            <ln class="char-info_element"><p class="char-info__input" id="char-info__input"></p>
+            <ln class="char-info_element">
+                <p class="char-info__input" id="char-info__input"></p>
                 <p>Nome do Personagem</p>
             </ln>
             <ln class="char-info_element"><input type="text" id="input-personagem">
@@ -36,7 +43,8 @@
             <ln class="char-info_element"><input type="text" id="input-personagem">
                 <p>Classe & Nível</p>
             </ln>
-            <ln class="char-info_element nivel-do-personagem"><input type="text" class="input-nivel-do-personagem" id="input-personagem">
+            <ln class="char-info_element nivel-do-personagem"><input type="text" class="input-nivel-do-personagem"
+                    id="input-personagem">
                 <p>Nível do Personagem</p>
             </ln>
         </ul>
@@ -95,9 +103,13 @@
             <div>
                 <p class="pontos_titulo">Defesa</p>
                 <ul class="defesa">
-                    <ln class="def_stats"><p>Total</p><strong>10</strong></ln>
+                    <ln class="def_stats">
+                        <p>Total</p><strong>10</strong>
+                    </ln>
                     <ln class="def_stats def-plus"><strong>10</strong></ln>
-                    <ln class="def_stats"><p>Outro</p><input type="number" name="outros_def" id="outros_def"></ln>
+                    <ln class="def_stats">
+                        <p>Outro</p><input type="number" name="outros_def" id="outros_def">
+                    </ln>
                 </ul>
             </div>
         </div>
@@ -235,15 +247,21 @@
     <section class="container ataques-cont">
         <div class="ataques">
             <p class="titulo">Ataques</p>
-            <div class="cabecalho-atq"><p>Nome do ataque</p><p>Mod.</p><p>Dano</p></div>
-                <ul id="ataques_lista">
-                    <ln class="atq">
-                        <p class="nome-ataque">Ataque</p><span>+5</span><span>1d6+2</span><button id="detalhes-atq"><i class="fa-sharp fa-solid fa-sheet-plastic"></i></button>
-                    </ln>
-                    <ln class="atq">
-                        <p class="nome-ataque">Ataque</p><span>+5</span><span>1d6+2</span><button id="detalhes-atq"><i class="fa-sharp fa-solid fa-sheet-plastic"></i></button>
-                    </ln>
-                </ul>
+            <div class="cabecalho-atq">
+                <p>Nome do ataque</p>
+                <p>Mod.</p>
+                <p>Dano</p>
+            </div>
+            <ul id="ataques_lista">
+                <ln class="atq">
+                    <p class="nome-ataque">Ataque</p><span>+5</span><span>1d6+2</span><button id="detalhes-atq"><i
+                            class="fa-sharp fa-solid fa-sheet-plastic"></i></button>
+                </ln>
+                <ln class="atq">
+                    <p class="nome-ataque">Ataque</p><span>+5</span><span>1d6+2</span><button id="detalhes-atq"><i
+                            class="fa-sharp fa-solid fa-sheet-plastic"></i></button>
+                </ln>
+            </ul>
             <div id="ataques_novo-ataque"><button id="novo-ataque-btn"><i
                         class="fa-sharp fa-solid fa-plus"></i></button></div>
         </div>
@@ -251,44 +269,66 @@
     <section class="container magias-cont">
         <div class="magias">
             <p class="titulo">Magias</p>
-            <div class="cabecalho-mag"><span>Nvl</span><p>Nome da magia</p><p>CD</p><p>Dano</p></div>
-                <ul id="magias_lista">
-                    <ln class="mag">
-                        <span>1º</span><p class="nome-magia">Magia</p><span>+5</span><span>1d6+2</span><button id="detalhes-mag"><i class="fa-sharp fa-solid fa-sheet-plastic"></i></button>
-                    </ln>
-                    <ln class="mag">
-                        <span>1º</span><p class="nome-magia">Magia</p><span>+5</span><span>1d6+2</span><button id="detalhes-mag"><i class="fa-sharp fa-solid fa-sheet-plastic"></i></button>
-                    </ln>
-                </ul>
-            <div id="magias_nova-magia"><button id="nova-magia-btn"><i
-                        class="fa-sharp fa-solid fa-plus"></i></button></div>
+            <div class="cabecalho-mag"><span>Nvl</span>
+                <p>Nome da magia</p>
+                <p>CD</p>
+                <p>Dano</p>
+            </div>
+            <ul id="magias_lista">
+                <ln class="mag">
+                    <span>1º</span>
+                    <p class="nome-magia">Magia</p><span>+5</span><span>1d6+2</span><button id="detalhes-mag"><i
+                            class="fa-sharp fa-solid fa-sheet-plastic"></i></button>
+                </ln>
+                <ln class="mag">
+                    <span>1º</span>
+                    <p class="nome-magia">Magia</p><span>+5</span><span>1d6+2</span><button id="detalhes-mag"><i
+                            class="fa-sharp fa-solid fa-sheet-plastic"></i></button>
+                </ln>
+            </ul>
+            <div id="magias_nova-magia"><button id="nova-magia-btn"><i class="fa-sharp fa-solid fa-plus"></i></button>
+            </div>
         </div>
     </section>
     <section class="container habilidades-cont">
         <div class="habilidades">
             <p class="titulo">Habilidades</p>
-            <div class="cabecalho-hab"><p>Nvl</p><p>Nome da habilidade</p></div>
-                <ul id="habilidades_lista">
-                    <ln class="hab">
-                        <span>+5</span><p class="nome-habilidade">Magia</p><button id="detalhes-hab"><i class="fa-sharp fa-solid fa-sheet-plastic"></i></button>
-                    </ln>
-                    <ln class="hab">
-                        <span>+5</span><p class="nome-habilidade">Magia</p><button id="detalhes-hab"><i class="fa-sharp fa-solid fa-sheet-plastic"></i></button>
-                    </ln>
-                </ul>
+            <div class="cabecalho-hab">
+                <p>Nvl</p>
+                <p>Nome da habilidade</p>
+            </div>
+            <ul id="habilidades_lista">
+                <ln class="hab">
+                    <span>+5</span>
+                    <p class="nome-habilidade">Magia</p><button id="detalhes-hab"><i
+                            class="fa-sharp fa-solid fa-sheet-plastic"></i></button>
+                </ln>
+                <ln class="hab">
+                    <span>+5</span>
+                    <p class="nome-habilidade">Magia</p><button id="detalhes-hab"><i
+                            class="fa-sharp fa-solid fa-sheet-plastic"></i></button>
+                </ln>
+            </ul>
         </div>
     </section>
     <section class="container proeficiencias-cont">
-        <p class="titulo">Proeficiencias</p><p class="proeficiencias">Lorem Ipsum</p>
+        <p class="titulo">Proeficiencias</p>
+        <p class="proeficiencias">Lorem Ipsum</p>
     </section>
-    <section class="container equipamento-cont"><p class="titulo">Equipamentos</p>
-        <div class="cabecalho-equip"><p>Qnt</p><p>Nome</p><p>Peso</p></div>
+    <section class="container equipamento-cont">
+        <p class="titulo">Equipamentos</p>
+        <div class="cabecalho-equip">
+            <p>Qnt</p>
+            <p>Nome</p>
+            <p>Peso</p>
+        </div>
         <ul class="equipamento_lista">
-            <ln class="equip"><span>1</span><p>Equipamento</p><span>0.5</span></ln>
+            <ln class="equip"><span>1</span>
+                <p>Equipamento</p><span>0.5</span>
+            </ln>
         </ul>
-        <div id="equip_novo-equip"><button id="novo-equip-btn"><i
-            class="fa-sharp fa-solid fa-plus"></i></button></div>
-</div>
+        <div id="equip_novo-equip"><button id="novo-equip-btn"><i class="fa-sharp fa-solid fa-plus"></i></button></div>
+        </div>
     </section>
 
     <script src="../js/main.js"></script>
