@@ -1,3 +1,5 @@
+@import url(./header.css);
+
 strong {
     font-size: 24px;
 }
@@ -30,20 +32,11 @@ strong {
     font-size: 16px;
 }
 
-.char-info_element input {
-    border-top: none;
-    border-left: none;
-    border-right: none;
+.char-info__input {
+    width: 250px;
+    border-bottom: 1px solid black;
+    padding-bottom: 4px;
 }
-
-.input-nome-do-personagem {
-    width: 100%;
-}
-
-.input-nivel-do-personagem {
-    width: 30px;
-}
-
 .nivel-do-personagem {
     display: flex;
     gap: 8px;

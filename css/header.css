@@ -1,0 +1,30 @@
+header {
+    width: 320px;
+}
+
+.cabecalho {
+    margin-top: 8px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 0.1fr;
+    column-gap: 8px;
+}
+
+.menu {
+    background-image: url(../img/Menu.svg);
+
+    width: 48px;
+    height: 48px;
+    border-bottom: 2px solid black;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.titulo__cabecalho {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    padding-top: 12px;
+    border-bottom: 2px solid black;
+    border-radius: 10px;
+}

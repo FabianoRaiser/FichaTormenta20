@@ -1,0 +1,24 @@
+.input-do-personagem {
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    width: 250px;
+}
+
+.input-nivel-do-personagem {
+    width: 30px;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+}
+
+.atributo_input {
+    width: 20px;
+    font-size: 18px;
+}
+
+#atributo_input {
+    width: 18px;
+    font-size: 20px;
+}
+
