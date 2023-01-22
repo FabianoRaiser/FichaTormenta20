@@ -58,6 +58,10 @@ strong {
     gap: 8px;
 }
 
+.nivel-do-personagem__input {
+    width: 48px;
+}
+
 .stats{
     max-width: 100vw;
 }

@@ -22,3 +22,47 @@
     font-size: 20px;
 }
 
+#input-manual {
+    display: none;
+}
+
+.escolha-tipo-atributo {
+    text-align: center;
+    margin: 0.5em;
+}
+
+.select-atributo {
+    margin-top: 0.25em;
+    padding: 8px;
+    border: 2px;
+}
+
+.controle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.controle-ajuste {
+    border: none;
+    font-size: 2em;
+    padding: 8px;
+}
+
+.controle-contador {
+    width: 18px;
+    font-size: 2em;
+    text-align: center;
+    margin: 8px 0;
+}
+
+.atributos-comprados {
+    grid-template-rows: 1fr 1fr;
+    row-gap: 4px;
+    justify-items: center;
+}
+
+.atributo-comprado {
+    width: 48px;
+}
+
