@@ -1,3 +1,5 @@
+@import url(./style.css);
+
 .input-do-personagem {
     border-left: none;
     border-top: none;
@@ -66,3 +68,22 @@
     width: 48px;
 }
 
+.pontos-compra {
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}
+
+.pontos-compra__titulo {
+    text-align: center;
+}
+
+.pontos__valor {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 700;
+    align-items: center;
+    border: 1px solid var(--cor-bordas);
+    padding: 8px;
+    margin-top: 4px;
+}
