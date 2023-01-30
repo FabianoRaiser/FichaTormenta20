@@ -72,7 +72,7 @@ function descontaPontos(atributo, operacao){
         case '-1':
             let op4;
             if (operacao == "+") {
-                op4 = `${defaultPoolLen} - 1`;
+                op4 = `${defaultPoolLen}`;
             } else {
                 op4 = `${defaultPoolLen} + 1`;
             }
@@ -86,6 +86,7 @@ function descontaPontos(atributo, operacao){
 controle.forEach( (elemento) => {
     elemento.addEventListener('click', (evento) => {
         manipulaAtributo(evento.target.dataset.controle, evento.target.parentNode);
+        atualizaAtributos();
         //console.log(evento.target.dataset.atributo);
     })
 });

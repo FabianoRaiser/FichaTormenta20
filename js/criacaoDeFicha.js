@@ -1,17 +1,27 @@
 const personagem = document.querySelectorAll('#input-personagem');
-const atributos = document.querySelectorAll('#atributo_input');
+const atributos = document.querySelectorAll('[data-contador]');
 
 const nomePersonagem = personagem[0];
 
-console.log(nomePersonagem.value);
+let For;
+let Des;
+let Con;
+let Int;
+let Sab;
+let Car;
+
+console.log(atributos);
 
 //------------ ATRIBUTOS ---------------------------
-const For = parseInt(atributos[0].value)
-const Des = parseInt(atributos[1].value)
-const Con = parseInt(atributos[2].value)
-const Int = parseInt(atributos[3].value)
-const Sab = parseInt(atributos[4].value)
-const Car = parseInt(atributos[5].value)
+
+function atualizaAtributos() {
+     For = parseInt(atributos[0].innerText)
+     Des = parseInt(atributos[1].innerText)
+     Con = parseInt(atributos[2].innerText)
+     Int = parseInt(atributos[3].innerText)
+     Sab = parseInt(atributos[4].innerText)
+     Car = parseInt(atributos[5].innerText)
+}
 
 console.log(For);
 
