@@ -1,6 +1,8 @@
 @import url(./style.css);
 
 .input-do-personagem {
+    font-family: var(--font-principal);
+    font-weight: 700;
     border-left: none;
     border-top: none;
     border-right: none;
