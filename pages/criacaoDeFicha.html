@@ -125,90 +125,108 @@
             </ln>
         </ul>
     </section>
+    <!--Atributos-->
     <section class="container stats">
         <p class="titulo">Atributos</p>
         <div class="escolha-tipo-atributo">
             <p>Tipo de escolha</p><select name="tipo-de-atributo" class="select-atributo" id="select-atributo">
-                <option class="select-atributo__item">Selecione...</option>
-                <option class="select-atributo__item">Compra de pontos</option>
-                <option class="select-atributo__item">Manual</option>
-            </select>    
+                <option class="select-atributo__item" value="null">Selecione...</option>
+                <option class="select-atributo__item" value="compra">Compra de pontos</option>
+                <option class="select-atributo__item" value="manual">Manual</option>
+            </select>
         </div>
-        <ul class="atributos" id="input-manual">
-            <ln class="atributo"><input type="number" id="atributo_input" value="0">
+        <!--Input Manual-->
+        <ul class="atributos hidden" id="pontosManual">
+            <ln class="atributo">
+                <input type="number" id="atributo_input" value="0">
                 <p>For</p>
             </ln>
-            <ln class="atributo"><input type="number" id="atributo_input" value="0">
+            <ln class="atributo">
+                <input type="number" id="atributo_input" value="0">
                 <p>Des</p>
             </ln>
-            <ln class="atributo"><input type="number" id="atributo_input" value="0">
+            <ln class="atributo">
+                <input type="number" id="atributo_input" value="0">
                 <p>Con</p>
             </ln>
-            <ln class="atributo"><input type="number" id="atributo_input" value="0">
+            <ln class="atributo">
+                <input type="number" id="atributo_input" value="0">
                 <p>Int</p>
             </ln>
-            <ln class="atributo"><input type="number" id="atributo_input" value="0">
+            <ln class="atributo">
+                <input type="number" id="atributo_input" value="0">
                 <p>Sab</p>
             </ln>
-            <ln class="atributo"><input type="number" id="atributo_input" value="0">
+            <ln class="atributo">
+                <input type="number" id="atributo_input" value="0">
                 <p>Car</p>
             </ln>
+        </ul>
+        <!--Compra de Pontos-->
+        <div class="hidden" id="pontosCompra">
+            <div class="pontos-compra">
+                <p class="pontos-compra__titulo">Pontos disponiveis:</p>
+                <p class="pontos__valor" id="pontos__restantes">10</p>
+            </div>
+            <ul class="atributos atributos-comprados" id="input-comprado">
+                <ln class="atributo atributo-comprado">
+                    <div class="controle">
+                        <buttom class="controle-ajuste" data-controle="+" data-atributo="forca">+</buttom>
+                        <p class="controle-contador" data-contador>0</p>
+                        <buttom class="controle-ajuste" data-controle="-" data-peca="forca">-</buttom>
+                    </div>
+                    <p>For</p>
+                </ln>
+                <ln class="atributo atributo-comprado">
+                    <div class="controle">
+                        <buttom class="controle-ajuste" data-controle="+" data-atributo="destreza">+</buttom>
+                        <p class="controle-contador" data-contador>0</p>
+                        <buttom class="controle-ajuste" data-controle="-" data-atributo="destreza">-</buttom>
+                    </div>
+                    <p>Des</p>
+                </ln>
+                <ln class="atributo atributo-comprado">
+                    <div class="controle">
+                        <buttom class="controle-ajuste" data-controle="+" data-atributo="constituicao">+</buttom>
+                        <p class="controle-contador" data-contador>0</p>
+                        <buttom class="controle-ajuste" data-controle="-" data-atributo="constituicao">-</buttom>
+                    </div>
+                    <p>Con</p>
+                </ln>
+                <ln class="atributo atributo-comprado">
+                    <div class="controle">
+                        <buttom class="controle-ajuste" data-controle="+" data-atributo="inteligencia">+</buttom>
+                        <p class="controle-contador" data-contador>0</p>
+                        <buttom class="controle-ajuste" data-controle="-" data-atributo="inteligencia">-</buttom>
+                    </div>
+                    <p>Int</p>
+                </ln>
+                <ln class="atributo atributo-comprado">
+                    <div class="controle">
+                        <buttom class="controle-ajuste" data-controle="+" data-atributo="sabedoria">+</buttom>
+                        <p class="controle-contador" data-contador>0</p>
+                        <buttom class="controle-ajuste" data-controle="-" data-atributo="sabedoria">-</buttom>
+                    </div>
+                    <p>Sab</p>
+                </ln>
+                <ln class="atributo atributo-comprado">
+                    <div class="controle">
+                        <buttom class="controle-ajuste" data-controle="+" data-atributo="carisma">+</buttom>
+                        <p class="controle-contador" data-contador>0</p>
+                        <buttom class="controle-ajuste" data-controle="-" data-atributo="carisma">-</buttom>
+                    </div>
+                    <p>Car</p>
+                </ln>
             </ul>
-
-            <div class="pontos-compra"><p class="pontos-compra__titulo">Pontos disponiveis:</p><p class="pontos__valor" id="pontos__restantes">10</p></div>
-        <ul class="atributos atributos-comprados" id="input-comprado">
-            <ln class="atributo atributo-comprado"><div class="controle">
-                <buttom class="controle-ajuste" data-controle="+" data-atributo="forca">+</buttom>
-                <p class="controle-contador" data-contador>0</p>
-                <buttom class="controle-ajuste" data-controle="-" data-peca="forca">-</buttom>
-            </div>
-                <p>For</p>
-            </ln>
-            <ln class="atributo atributo-comprado"><div class="controle">
-                <buttom class="controle-ajuste" data-controle="+" data-atributo="destreza">+</buttom>
-                <p class="controle-contador" data-contador>0</p>
-                <buttom class="controle-ajuste" data-controle="-" data-atributo="destreza">-</buttom>
-            </div>
-                <p>Des</p>
-            </ln>
-            <ln class="atributo atributo-comprado"><div class="controle">
-                <buttom class="controle-ajuste" data-controle="+" data-atributo="constituicao">+</buttom>
-                <p class="controle-contador" data-contador>0</p>
-                <buttom class="controle-ajuste" data-controle="-" data-atributo="constituicao">-</buttom>
-            </div>
-                <p>Con</p>
-            </ln>
-            <ln class="atributo atributo-comprado"><div class="controle">
-                <buttom class="controle-ajuste" data-controle="+" data-atributo="inteligencia">+</buttom>
-                <p class="controle-contador" data-contador>0</p>
-                <buttom class="controle-ajuste" data-controle="-" data-atributo="inteligencia">-</buttom>
-            </div>
-                <p>Int</p>
-            </ln>
-            <ln class="atributo atributo-comprado"><div class="controle">
-                <buttom class="controle-ajuste" data-controle="+" data-atributo="sabedoria">+</buttom>
-                <p class="controle-contador" data-contador>0</p>
-                <buttom class="controle-ajuste" data-controle="-" data-atributo="sabedoria">-</buttom>
-            </div>
-                <p>Sab</p>
-            </ln>
-            <ln class="atributo atributo-comprado"><div class="controle">
-                <buttom class="controle-ajuste" data-controle="+" data-atributo="carisma">+</buttom>
-                <p class="controle-contador" data-contador>0</p>
-                <buttom class="controle-ajuste" data-controle="-" data-atributo="carisma">-</buttom>
-            </div>
-                <p>Car</p>
-            </ln>
-            </ul>
+        </div>
     </section>
-    <section class="container">
-        <div class="pontos-vida">
-            <p class="titulo">Pontos de vida</p>
-            <p class="pontos-vida__pontos" id="pontos-vida">0</p>
+    <section class="container caracteriscas">
+        <div id="caracteristicasClasse">
+            <!--Informações da Classe Inputado por JS-->
         </div>
     </section>
 
-    <script src="../js/atributos.js"></script>
+    <script src="../js/compraAtributos.js"></script>
     <script src="../js/criacaoDeFicha.js"></script>
 </body>
 
