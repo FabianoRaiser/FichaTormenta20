@@ -21,10 +21,6 @@
     font-size: 18px;
 }
 
-#atributo_input {
-    width: 18px;
-    font-size: 20px;
-}
 
 .hidden {
     display: none;
@@ -88,4 +84,32 @@
     border: 1px solid var(--cor-bordas);
     padding: 8px;
     margin-top: 4px;
+}
+
+.pontos-vida {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pontos-vida__pontos {
+    text-align: center;
+    font-size: 2em;
+    border: 1px solid var(--cor-bordas);
+    width: 2em;
+    margin: 0.5em 0;
+}
+
+.pontos-magia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pontos-magia__pontos {
+    text-align: center;
+    font-size: 2em;
+    border: 1px solid var(--cor-bordas);
+    width: 2em;
+    margin: 0.5em 0;
 }

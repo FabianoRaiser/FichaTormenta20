@@ -93,3 +93,24 @@ controle.forEach( (elemento) => {
         //console.log(evento.target.dataset.atributo);
     })
 });
+
+//---------------------- SELETOR --------------------------
+
+const escolha = document.getElementById('selectAtributo');
+const compra = document.getElementById('pontosCompra');
+const manual = document.getElementById('pontosManual');
+
+console.log(escolha.value);
+
+escolha.addEventListener('change', () => {
+    if (escolha.value == "compra") {
+        compra.classList.remove('hidden');
+        manual.classList.add('hidden');
+    } else if (escolha.value == "manual") {
+        manual.classList.remove('hidden');
+        compra.classList.add('hidden');
+    } else {
+        compra.classList.add('hidden');
+        manual.classList.add('hidden');
+    }
+})

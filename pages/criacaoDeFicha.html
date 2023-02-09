@@ -129,8 +129,8 @@
     <section class="container stats">
         <p class="titulo">Atributos</p>
         <div class="escolha-tipo-atributo">
-            <p>Tipo de escolha</p><select name="tipo-de-atributo" class="select-atributo" id="select-atributo">
-                <option class="select-atributo__item" value="null">Selecione...</option>
+            <p>Tipo de escolha</p><select name="tipo-de-atributo" class="select-atributo" id="selectAtributo">
+                <option class="select-atributo__item" value="nada">Selecione...</option>
                 <option class="select-atributo__item" value="compra">Compra de pontos</option>
                 <option class="select-atributo__item" value="manual">Manual</option>
             </select>
@@ -138,27 +138,27 @@
         <!--Input Manual-->
         <ul class="atributos hidden" id="pontosManual">
             <ln class="atributo">
-                <input type="number" id="atributo_input" value="0">
+                <input type="number" class="atributo_input" data-atributo value="0">
                 <p>For</p>
             </ln>
             <ln class="atributo">
-                <input type="number" id="atributo_input" value="0">
+                <input type="number" class="atributo_input" data-atributo value="0">
                 <p>Des</p>
             </ln>
             <ln class="atributo">
-                <input type="number" id="atributo_input" value="0">
+                <input type="number" class="atributo_input" data-atributo value="0">
                 <p>Con</p>
             </ln>
             <ln class="atributo">
-                <input type="number" id="atributo_input" value="0">
+                <input type="number" class="atributo_input" data-atributo value="0">
                 <p>Int</p>
             </ln>
             <ln class="atributo">
-                <input type="number" id="atributo_input" value="0">
+                <input type="number" class="atributo_input" data-atributo value="0">
                 <p>Sab</p>
             </ln>
             <ln class="atributo">
-                <input type="number" id="atributo_input" value="0">
+                <input type="number" class="atributo_input" data-atributo value="0">
                 <p>Car</p>
             </ln>
         </ul>
@@ -226,7 +226,7 @@
         </div>
     </section>
 
-    <script src="../js/compraAtributos.js"></script>
+    <script src="../js/atributos.js"></script>
     <script src="../js/criacaoDeFicha.js"></script>
 </body>
 
