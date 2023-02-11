@@ -1,4 +1,5 @@
-# README EM FORMULAÇÃO
+# ESSE PROJETO SERÁ DESCONTINUADO
+# MAS TERÁ UMA NOVA VERSÃO EM REACT
 
 Ficha para personagens de Tormenta20 focado para uso em celulares.
 
